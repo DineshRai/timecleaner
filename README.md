@@ -9,7 +9,7 @@ pip3 install timeclean
 
 To call into your python scripts
 ```
-from timeclean import data_cleaner
+from timecleaner import data_cleaner
 ```
 
 There are several parameters that have to be filled
