@@ -1,6 +1,8 @@
 # timecleaner
 Python package to help set up time series data for machine learning
 
+Helps you take messy time series data and organizes in a way a machine learning library can use to create predictive models. The output creates a data set that has consistent intervals of time (based on your input).
+
 
 To install:
 ```
@@ -16,7 +18,7 @@ There are several parameters that have to be filled
 
 
 ```
-X, Y = data_cleaner(dataframe, Datetime_column, time_interval, outcome_column, time_steps_to_evaluate, time_steps_look_ahead, interprolation_direction)
+X, Y = data_cleaner(dataframe, Datetime_column, time_interval, outcome_column, time_steps_to_evaluate, time_steps_look_ahead, interpolation_direction)
 ```
 
 -dataframe - the csv data you wish to use in the format of a pandas dataframe 
@@ -31,5 +33,5 @@ X, Y = data_cleaner(dataframe, Datetime_column, time_interval, outcome_column, t
 
 -time_steps_look_ahead - the number of time steps you want to predict ahead (eg if you want predict stock prices 3 hours ahead in hourly data, select 3)
 
--interprolation_direction - either 'forwards' or 'backwards'
+-interpolation_direction - either 'forwards' or 'backwards'
 
