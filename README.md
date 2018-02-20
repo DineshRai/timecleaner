@@ -25,13 +25,13 @@ X, Y = data_cleaner(dataframe, Datetime_column, time_interval, outcome_column, t
 
 -Datetime_column - the name of the Datetime column in your dataset, format as string
 
--time_interval - the intervals you wish to use when you evaluate your dataset, fromat as string, eg '30min', '10min', '30S, '1S', etc
+-time_interval - the intervals you wish to use when you evaluate your dataset, format as string, eg '30min', '10min', '30S, '1S', etc
 
--outcome_column - the name of the column in your dataset your wish to use as your outcome (ie 'y-axis), format as string
+-outcome_column - the name of the column in your dataset you wish to use as your outcome (ie 'y-axis), format as string
 
 -time_sets_to_evaluate - the number of time steps you wish to use when evaluating your X data
 
--time_steps_look_ahead - the number of time steps you want to predict ahead (eg if you want predict stock prices 3 hours ahead in hourly data, select 3)
+-time_steps_look_ahead - the number of time steps you want to predict ahead (eg if you want to predict stock prices 3 hours ahead in hourly data, select 3)
 
 -interpolation_direction - either 'forwards' or 'backwards'
 

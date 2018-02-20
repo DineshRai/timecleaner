@@ -2,14 +2,14 @@ import pandas as pd
 import numpy as np
 
 
-def data_cleaner(dataframe, Datetime_column, time_interval, outcome_column, time_steps_to_evaluate=1, time_steps_look_ahead=0, interprolation_direction='forward'):
+def data_cleaner(dataframe, Datetime_column, time_interval, outcome_column, time_steps_to_evaluate=1, time_steps_look_ahead=0, interpolation_direction='forward'):
 
 
 
-  if interprolation_direction == 'forward':
-    interprolation_direction = 'ffill'
-  elif interprolation_direction == 'backward':
-    interprolation_direction = 'bfill'
+  if interpolation_direction == 'forward':
+    interpolation_direction = 'ffill'
+  elif interpolation_direction == 'backward':
+    interpolation_direction = 'bfill'
 
   #sort by DateTime
   df_sorted = dataframe.sort_values(Datetime_column)
